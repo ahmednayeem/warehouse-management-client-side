@@ -1,7 +1,7 @@
 
 .book{
     background:#89D9DA;
-    color: #EcE6CE;
+    color: #ffffff;
     /* color: #fff; */
     width: 150px;
     height: 50px;
@@ -10,7 +10,7 @@
     transition: all .4s ease-out;
 }
 .book:hover{
-    color:#ffffff;
+    
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 
     cursor: pointer;
@@ -20,18 +20,13 @@
 
 .product{
     margin-top: 50px;
-    box-shadow: 0 0 10px rgb(0 0 0 / 8%);
+    box-shadow: 0 15px 45px -20px rgba(206, 191, 191, 0.493);
     border: 1px solid #eee;
     border-radius: 10px;
     padding: 20px 10px 10px;
     text-align: center;
-    transition: all .4s ease-out;
+   
     
    
 }
 
-/* .product:hover{
-    box-shadow: rgba(0, 0, 0, 0.40) 0px 5px 20px;
-    cursor: pointer;
-    
-} */

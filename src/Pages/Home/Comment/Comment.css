@@ -148,8 +148,3 @@ a{
         margin-top: 10px;
     }
 }
-::selection{
-    color: #ffffff;
-    background-color: #252525;
-}
- 

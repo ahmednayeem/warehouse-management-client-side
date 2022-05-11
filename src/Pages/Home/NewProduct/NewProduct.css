@@ -7,7 +7,15 @@
     background-repeat: no-repeat;
     box-shadow: 0 0 10px rgb(0 0 0 / 8%);
     border-radius: 7px;
+    transition: all ease 0.4s;
 }
+
+.pic1:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+   
+}
+
 
 .pic2{
     height: 25vh;
@@ -18,7 +26,17 @@
     background-repeat: no-repeat;
     box-shadow: 0 0 10px rgb(0 0 0 / 8%);
     border-radius: 7px;
+    transition: all ease 0.4s;
 }
+
+.pic2:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+   
+}
+
+
+
 
 .pic3{
     height: 25vh;
@@ -29,6 +47,13 @@
     background-repeat: no-repeat;
     box-shadow: 0 0 10px rgb(0 0 0 / 8%);
     border-radius: 7px;
+    transition: all ease 0.4s;
+}
+
+.pic3:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+   
 }
 
 
@@ -41,6 +66,14 @@
     background-repeat: no-repeat;
     box-shadow: 0 0 10px rgb(0 0 0 / 8%);
     border-radius: 7px;
+    transition: all ease 0.4s;
+}
+
+
+.pic4:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+   
 }
 
 .pic5{
@@ -52,7 +85,15 @@
     background-repeat: no-repeat;
     box-shadow: 0 0 10px rgb(0 0 0 / 8%);
     border-radius: 7px;
+    transition: all ease 0.4s;
 }
+
+.pic5:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+   
+}
+
 
 .pic6{
     height: 25vh;
@@ -63,89 +104,186 @@
     background-repeat: no-repeat;
     box-shadow: 0 0 10px rgb(0 0 0 / 8%);
     border-radius: 7px;
+    transition: all ease 0.4s;
 }
+
+
+.pic6:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+   
+}
+
 
 .img-container{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-column-gap: 30px;
-    grid-row-gap: 30px;
-    
-    
+    grid-row-gap: 30px;  
+   
   
 }
 
+
 .products{
     background: #F6F6F6;
-}
-
-@media only screen and (max-width:576px) {
-    .img-container{
-        grid-template-columns: repeat(1, 1fr);
-        
-    }
-    .pic1{
-        width: 100%;
-    }
-    .pic2{
-        width: 100%;
-    }
-    .pic3{
-        width: 100%;
-    }
-    .pic4{
-        width: 100%;
-    }
-    .pic5{
-        width: 100%;
-    }
-    .pic6{
-        width: 100%;
-    }
-
+    margin-top: -30px;
+    
 }
 
 
 
-
-@media only screen and (min-width:577px) and (max-width:992px) {
+    
+@media(max-width:1280px){
     .img-container{
-        grid-template-columns: repeat(2, 1fr);
-       
+        grid-template-columns: repeat(2, 1fr); 
+        /* margin-left: 10px; */
     }
     .pic1{
-        width: 35vw;
-    }
-    .pic2{
-        width: 35vw;
-    }
-    .pic3{
-        width: 35vw;
-    }
-    .pic4{
-        width: 35vw;
-    }
-    .pic5{
-        width: 35vw;
-    }
-    .pic6{
-        width: 35vw;
+        width: 45vw;
     }
 
+    .pic2{
+        width: 45vw;
+    }
+    .pic3{
+        width: 45vw;
+    }
+    .pic4{
+        width: 45vw;
+    }
+    .pic5{
+        width: 45vw;
+    }
+    .pic6{
+        width: 45vw;
+    }
+    }
+
+
+
+    @media(max-width:960px){
+        .img-container{
+            grid-template-columns: repeat(2, 1fr);
+        margin-left: 20px;
+        }
+        .pic1{
+            width: 35vw;
+        }
+    
+        .pic2{
+            width: 35vw;
+        }
+        .pic3{
+            width: 35vw;
+        }
+        .pic4{
+            width: 35vw;
+        }
+        .pic5{
+            width: 35vw;
+        }
+        .pic6{
+            width: 35vw;
+        }
     }
 
 
     
-/* @media only screen and (min-width:993px) and (max-width:1440px) {
-    .img-container{
-        grid-template-columns: repeat(3, 1fr);
-        margin-left: 60px;
         
+    
+@media(max-width:790px){
+    .img-container{
+        grid-template-columns: repeat(1, 1fr); 
     }
-} */
+    .pic1{
+        width: 80vw;
+    }
+
+    .pic2{
+        width: 80vw;
+    }
+    .pic3{
+        width: 80vw;
+    }
+    .pic4{
+        width: 80vw;
+    }
+    .pic5{
+        width: 80vw;
+    }
+    .pic6{
+        width: 80vw;
+    }
+    }
+
+
+    
+    @media(max-width:540px){
+        .img-container{
+            grid-template-columns: repeat(1, 1fr);
+             
+        }
+        .pic1{
+            width: 60vw;
+        }
+    
+        .pic2{
+            width: 60vw;
+        }
+        .pic3{
+            width: 60vw;
+        }
+        .pic4{
+            width: 60vw;
+        }
+        .pic5{
+            width: 60vw;
+        }
+        .pic6{
+            width: 60vw;
+        }
+        }
+    
 
 
 
+
+
+
+
+
+
+
+
+
+    @media(max-width:340px){
+        .img-container{
+            grid-template-columns: repeat(1, 1fr);
+          
+        }
+        .pic1{
+            width: 100%;
+        }
+    
+        .pic2{
+            width: 100%;
+        }
+        .pic3{
+            width: 100%;
+        }
+        .pic4{
+            width: 100%;
+        }
+        .pic5{
+            width: 100%;
+        }
+        .pic6{
+            width: 100%;
+        }
+        }
+    
+    
 
 
 

@@ -5,9 +5,9 @@ import './NewProduct.css'
 const NewProduct = () => {
     return (
         <div>
-            <h1 className='product-title mt-5'>Upcoming Products</h1>
+            <h1 className='product-title my-20'>Upcoming Products</h1>
          <div className='products'>
-         <div className='container mt-5 p-14'>
+         <div className='container p-14'>
             <div className='img-container'>
             <div className='pic1'> 
             </div>

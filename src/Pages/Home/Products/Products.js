@@ -15,7 +15,7 @@ const Products = () => {
 
     return (
         <div>
-            <h1 className='product-title'>Our Products</h1>
+            <h1 className='product-title mt-5'>Our Products</h1>
             <div className='container'>
             {
                 products.map(product => <Product
@@ -26,7 +26,7 @@ const Products = () => {
             }
             </div>
             <div className='text-center'>
-                <button className='mt-5 seeAll'>See all</button>
+                <button className='mt-5 seeAllBtn'>See all</button>
             </div>
         </div>
     );

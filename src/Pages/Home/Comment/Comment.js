@@ -5,7 +5,7 @@ const Comment = () => {
     return (
         <div className='testimonials'>
             <div className='testimonials-heading'>
-                <span>Comments</span>
+                <span className='my-10'>Comments</span>
                 <h1>Clients Says</h1>
             </div>
 

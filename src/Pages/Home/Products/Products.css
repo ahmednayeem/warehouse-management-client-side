@@ -7,30 +7,43 @@
 }
 
 .product-title{
-    font-size: 40px;
+    font-size: 50px;
     text-align: center;
-    font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 1px;
+   
+    
+    
+    
 }
 
-.seeAll{
+
+    .seeAllBtn{
 
         background:#8AAEA7;
-        color: #EcE6CE;
+        color: #ffffff;
         /* color: #fff; */
         width: 200px;
         height: 50px;
         font-weight: 700;
         font-size: 18px;
         border-radius: 10px;
-        transition: all .4s ease-out;
+        transition: all .2s ease;
     }
-    .seeAll:hover{
-        color:#ffffff;
+    .seeAllBtn:hover{
+      
         box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
     
         cursor: pointer;
     
     }
+
+
+
+
+
+
+
 
 
 @media only screen and (max-width:576px) {
