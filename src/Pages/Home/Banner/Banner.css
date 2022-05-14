@@ -5,10 +5,11 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height:80vh;
-    
+    height:80vh;  
 
 }
+
+
 .content h1{
     font-size:70px;
     font-style: italic;
@@ -74,17 +75,17 @@
     @media(max-width:960px){
         .home{
             width: 100%;
-            height: 45vh;
+            height: 50vh;
                
            }
            .overlay{
                background:rgb(0,0,0,.6);
-               height: 45vh;
+               height: 50vh;
               
            }
            .content h1{
                font-size: 35px;
-               margin-top: -80%;
+               margin-top: -55%;
            }
            .content p{
                font-size: 15px;

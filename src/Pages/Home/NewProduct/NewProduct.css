@@ -13,6 +13,8 @@
 .pic1:hover{
     transform: scale(1.1);
     cursor: pointer;
+    filter: brightness(0.7)
+
    
 }
 
@@ -32,6 +34,8 @@
 .pic2:hover{
     transform: scale(1.1);
     cursor: pointer;
+    filter: brightness(0.7)
+
    
 }
 
@@ -53,6 +57,8 @@
 .pic3:hover{
     transform: scale(1.1);
     cursor: pointer;
+    filter: brightness(0.7)
+
    
 }
 
@@ -73,6 +79,8 @@
 .pic4:hover{
     transform: scale(1.1);
     cursor: pointer;
+    filter: brightness(0.7)
+
    
 }
 
@@ -91,6 +99,8 @@
 .pic5:hover{
     transform: scale(1.1);
     cursor: pointer;
+    filter: brightness(0.7)
+
    
 }
 
@@ -111,6 +121,7 @@
 .pic6:hover{
     transform: scale(1.1);
     cursor: pointer;
+    filter: brightness(0.7)
    
 }
 
