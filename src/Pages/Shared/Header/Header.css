@@ -11,3 +11,11 @@
 a{
     margin-right: 50px;
 }
+
+.sign{
+ color:#989a9c;
+}
+
+.sign:hover{
+    color:#C7C8C9;
+}
