@@ -1,0 +1,51 @@
+ .submitBtn{
+
+    background: linear-gradient(to right, #50c9c3, #96deda);
+        color: #ffffff;
+        width: 100%;
+        height: 50px;
+        font-weight: 700;
+        font-size: 18px;
+        border-radius: 7px;
+        transition: all .2s ease;
+    }
+    .submitBtn:hover{
+      
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    
+        cursor: pointer;
+    
+    }
+
+
+    .from{
+       
+        border: 1px solid #ECE6CE;
+        border-radius: 7px;
+        background: #F6F6F6;
+      
+    }
+    .from input{
+        height: 50px;
+        border: none;
+    }
+
+
+    .loginFont{
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+
+
+
+    @media(max-width:540px){
+       .from{
+         width: 100%;
+       }
+       .from input{
+           width: 100%;
+       }
+    } 
+
+
+
+  
