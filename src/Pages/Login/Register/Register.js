@@ -1,8 +1,10 @@
 import React from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
+import { useCreateUserWithEmailAndPassword, useUpdateProfile } from 'react-firebase-hooks/auth';
 import './Register.css';
 import auth from '../../../firebase.init';
+import SocialLogin from '../SocialLogin/SocialLogin';
+import Loading from '../../Shared/Loading/Loading';
 
 
 const Register = () => {
@@ -11,28 +13,39 @@ const Register = () => {
         user,
         loading,
         error,
-      ] = useCreateUserWithEmailAndPassword(auth);
+      ] = useCreateUserWithEmailAndPassword(auth, {sendEmailVerification: true});
+      const [updateProfile, updating, updateError] = useUpdateProfile(auth);
+
     const navigate = useNavigate();
 
     const navigateLogin = () =>{
         navigate('/login');
     }
 
+    if(loading || updating){
+        return <Loading></Loading>
+    }
+
+
     if(user){
         navigate('/home');
     }
 
-    const handleRegister = event =>{
+    const handleRegister = async (event) =>{
         event.preventDefault();
         const name = event.target.name.value;
         const email = event.target.email.value;
         const password = event.target.password.value;
 
-        createUserWithEmailAndPassword(email, password);
+        await createUserWithEmailAndPassword(email, password);
+        await updateProfile({ displayName: name });
+        console.log('Updated profile'); 
+        navigate('/home');
     }
 
     return (
-            <div className='py-20 md:flex justify-center items-center'>
+           <div>
+                <div className='py-20 md:flex justify-center items-center'>
             <div className='w-[20] md:ml-auto mx-auto md:w-96 py-10 px-10 from shadow-xl'>
             <h2 className='font-bold text-4xl text-center loginFont
         '>Please Register</h2>
@@ -53,9 +66,13 @@ const Register = () => {
            </button>
             
             </form>
-            <p className='fs-5 mt-3'>Already Registered? <Link to="/login" className='text-primary pe-auto text-decoration-none' onClick={navigateLogin}>Login</Link> </p>
+            <p className=' mt-3'>Already Registered? <Link to="/login" className='text-primary pe-auto text-decoration-none fw-bold' onClick={navigateLogin}>Login</Link> </p>
         </div>
  </div>
+ <div>
+     <SocialLogin></SocialLogin>
+ </div>
+           </div>
     );
 };
 

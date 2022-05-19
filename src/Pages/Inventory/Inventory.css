@@ -1,0 +1,45 @@
+.bg-color{
+    background:#334756;
+}
+
+
+.addBtn{
+
+    background: linear-gradient(to right, #4cb8c4, #3cd3ad);
+    color: #ffffff;
+    width: 15%;
+    display: block;
+    
+    height: 50px;
+    font-weight: 700;
+    font-size: 18px;
+    border-radius: 10px;
+    transition: all .2s ease;
+    margin-left: 60%;
+
+    
+}
+.addBtn:hover{
+  
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+
+    cursor: pointer;
+
+}
+
+
+.background{
+    background: red;
+}
+
+
+@media(max-width:540px){
+    .addBtn{
+      width: 50%;
+      margin-left: 180px;
+      
+    }
+   
+ } 
+
+

@@ -2,20 +2,27 @@
     font-family: 'Kaushan Script', cursive;
     font-size: 35px;
     
+    
 }
 
 .navStyle span{
     color:#ABDBE3;
 }
 
+nav a.active{
+    color:#fff;
+ 
+}
+
 a{
-    margin-right: 50px;
+    text-decoration: none;
+    color:#08C6F9;
+    font-size: 19px;
+    margin-right: 40px; 
+}
+a:hover{
+    color:#08C6F9;
 }
 
-.sign{
- color:#989a9c;
-}
 
-.sign:hover{
-    color:#C7C8C9;
-}
+ 

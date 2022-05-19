@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Product from '../Product/Product';
+import { Link } from 'react-router-dom';
 import './Products.css';
 
 
@@ -26,7 +27,7 @@ const Products = () => {
             }
             </div>
             <div className='text-center'>
-                <button className='mt-5 seeAllBtn'>See all</button>
+               <Link to='/inventory'> <button className='mt-5 seeAllBtn'>See all</button></Link>
             </div>
         </div>
     );

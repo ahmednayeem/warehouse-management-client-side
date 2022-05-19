@@ -1,0 +1,56 @@
+
+.socialButton{
+    background: #4281E5;
+    color:#ffffff;
+    width: 20%;
+    display: block;
+    margin: auto;
+    height: 50px;
+    font-size: 1.52rem;
+    border-radius: 7px;
+    transition: all .4s ease;
+    font-family: 'Roboto', sans-serif;
+    
+    
+    
+}
+
+.margin{
+    margin-top: -40px
+}
+
+.color{
+    margin-right: 5px;
+    color:#ffffff
+}
+
+
+.socialButton:hover{
+      
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+
+    cursor: pointer;
+    
+
+} 
+
+
+
+ @media(max-width:540px){
+    .socialButton{
+        width: 100%;
+        
+        
+    }
+
+   }   
+
+ 
+     @media(max-width:960px){
+    .socialButton{
+        width: 50%;
+        margin-left: 25%;
+        
+    }
+
+   }     

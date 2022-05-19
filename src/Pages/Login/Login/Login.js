@@ -1,9 +1,15 @@
 import React, { useRef } from 'react';
 import { Form } from 'react-bootstrap';
-import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
+import { useSendPasswordResetEmail, useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import auth from '../../../firebase.init';
+import Loading from '../../Shared/Loading/Loading';
+import SocialLogin from '../SocialLogin/SocialLogin';
 import './Login.css'
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
+
 
 const Login = () => {
   const emailRef = useRef('');
@@ -12,6 +18,7 @@ const Login = () => {
   const location = useLocation();
     
   let from = location.state?.from?.pathname || "/";
+  let errorElement;
   
   const [
     signInWithEmailAndPassword,
@@ -20,7 +27,9 @@ const Login = () => {
     error,
   ] = useSignInWithEmailAndPassword(auth);
  
-  
+  const [sendPasswordResetEmail, sending] = useSendPasswordResetEmail(auth);
+
+
   const handleSubmit = event => {
     event.preventDefault();
     const email = emailRef.current.value;
@@ -30,9 +39,20 @@ const Login = () => {
     
 }
 
+if(loading || sending){
+  return <Loading></Loading>
+}
+
 
     if(user){
       navigate(from, { replace: true})
+    }
+
+    if (error) {
+      errorElement=
+          <p className='text-danger text-center fw-bold'>Error: {error?.message}
+          </p>
+      
     }
    
 
@@ -40,9 +60,24 @@ const Login = () => {
   const navigateRegister = event => {
         navigate('/register');
      }
+
+     const resetPassword = async() => {
+      const email = emailRef.current.value;
+       if(email){
+        await sendPasswordResetEmail(email);
+        toast('Sent email');
+       }
+       else{
+         toast('please enter your email address');
+       }
+     }
   
-  return (
-       <div className='py-20 md:flex justify-center items-center'>
+ 
+ 
+ return (
+<div>
+  <div>
+  <div className='py-20 md:flex justify-center items-center'>
             <div className=' w-[20] md:ml-auto mx-auto md:w-96 py-10 px-10 from shadow-xl'>
             <h2 className='font-bold text-4xl text-center loginFont
             '>Please login</h2>
@@ -61,10 +96,21 @@ const Login = () => {
     Submit
   </button>
 </Form>
-<p className='mt-3 fs-5'>New here? <Link to="/register" className='text-primary' onClick={navigateRegister}>Sign up</Link></p>
+{errorElement}
+<p className='mt-3'>New here? <Link to="/register" className='text-primary fw-bold' onClick={navigateRegister}>Sign up</Link></p>
+
+<p className='mt-3'>Forget Password? <button className='text-decoration-none text-red-700 fw-bold' onClick={resetPassword}>Reset Password</button></p>
 </div>
+
         </div>
        </div>
+  </div>
+  <div>
+<SocialLogin></SocialLogin>
+<ToastContainer />
+  </div>
+</div>
+       
     );
 };
 
