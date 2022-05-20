@@ -1,14 +1,14 @@
 .checkoutBtn{
 
-    background: linear-gradient(to right, #114357, #f29492);
+    background: linear-gradient(to right, #ec6f66, #f3a183);
         color: #ffffff;
-        width: 15%;
+        width: 50%;
         height: 50px;
-         font-weight: bold;
+        font-weight: bold;
         font-size: 1.52rem;
         border-radius: 7px;
         transition: all .2s ease;
-        margin-left: 45%;
+       margin-left: 50px;
        
     }
     .checkoutBtn:hover{
@@ -19,30 +19,54 @@
     
     } 
 
+.productDetail{
+    box-shadow: 0 15px 45px -20px rgba(206, 191, 191, 0.493);
+    border: 1px solid #eee;
+    border-radius: 10px;
+     padding: 20px 10px ; 
+    text-align: center;
+    width: 25%;
+    margin: auto;
+}
+
+
+
+/* @media(max-width:414px){
+    .productDetail{
+        width: 100%;
+    }
+
+ 
+   }  */
+
+
+
 
     @media(max-width:540px){
-      .checkoutBtn{
+      .productDetail{
           width: 100%;
       }
-     } 
+    }
  
 
-     
-    @media(max-width:960px){
-        .checkoutBtn{
-            width: 50%;
-            margin-left: 25%;
+
+ @media(max-width:960px){
+        .productDetail{
+            width: 80%;
+            
+           
         }
+      
        
-    }
+    }   
 
 
 
-         
+/*          
     @media(max-width:1280px){
-        .checkoutBtn{
-            width: 50%;
-            margin-left: 25%;
+        .productDetail{
+            width: 40%;
+            
         }
        
-    }
+    } */

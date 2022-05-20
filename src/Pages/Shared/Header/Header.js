@@ -39,9 +39,13 @@ const Header = () => {
 
  <div className='mt-2'>
 
-<Link className='' to="/login" activeClassName="active" onClick={handleSignOut}>My Item</Link>
+{/* <Link  to="/myproduct" className="active1">My Item</Link> */}
 
-<Link className='' to="/login" activeClassName="active" onClick={handleSignOut}>Add Item</Link>
+<NavLink className='mt-2' as={Link} to="manage">Manage Product</NavLink>
+
+{/* <Link  to="/addproduct" className="active2">Add Item</Link> */}
+
+<NavLink className='mt-2' as={Link} to="addproduct">Add Product</NavLink>
      
      <Link className='' to="/login" activeClassName="active" onClick={handleSignOut}>Log Out</Link>
  </div>

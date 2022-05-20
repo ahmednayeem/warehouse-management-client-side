@@ -41,7 +41,7 @@ const Comment = () => {
 
                         <div className='profile'>
                            <div className='profile-img' >
-                               <img src="https://www.realmenrealstyle.com/wp-content/uploads/2021/07/5-10.jpg" alt="" />
+                               <img src="https://www.realmenrealstyle.com/wp-content/uploads/2021/08/4-1.jpg" alt="" />
                            </div>
                            <div className='name-user'>
                               <strong>Touseeq Ijaz</strong> 
@@ -67,7 +67,7 @@ const Comment = () => {
 
                         <div className='profile'>
                            <div className='profile-img' >
-                               <img src="https://www.realmenrealstyle.com/wp-content/uploads/2021/07/5-10.jpg" alt="" />
+                               <img src="https://ss-de-los-reyes.thestyleoutlets.es/sites/default/files/styles/redtso_default_picturebreakpoints_theme_redtso_main_wide_1x/public/suits_inc_0.png" alt="" />
                            </div>
                            <div className='name-user'>
                               <strong>Touseeq Ijaz</strong> 
@@ -93,7 +93,7 @@ const Comment = () => {
 
                         <div className='profile'>
                            <div className='profile-img' >
-                               <img src="https://www.realmenrealstyle.com/wp-content/uploads/2021/07/5-10.jpg" alt="" />
+                               <img src="https://viladecans.thestyleoutlets.es/sites/default/files/styles/redtso_default_picturebreakpoints_theme_redtso_main_wide_1x/public/suitsinc-ss20_4.png" alt="" />
                            </div>
                            <div className='name-user'>
                               <strong>Touseeq Ijaz</strong> 
@@ -120,7 +120,7 @@ const Comment = () => {
 
                         <div className='profile'>
                            <div className='profile-img' >
-                               <img src="https://www.realmenrealstyle.com/wp-content/uploads/2021/07/5-10.jpg" alt="" />
+                               <img src="https://corporatebytes.in/wp-content/uploads/f337ee2afc2f8b0d48f31dcce13f0336-outfits-for-men-fashion-outfits-e1506009172400.jpg.webp" alt="" />
                            </div>
                            <div className='name-user'>
                               <strong>Touseeq Ijaz</strong> 
@@ -147,7 +147,7 @@ const Comment = () => {
 
                         <div className='profile'>
                            <div className='profile-img' >
-                               <img src="https://www.realmenrealstyle.com/wp-content/uploads/2021/07/5-10.jpg" alt="" />
+                               <img src="https://images.unsplash.com/photo-1624824216985-5639b3071ce6?crop=entropy&cs=tinysrgb&fm=jpg" alt="" />
                            </div>
                            <div className='name-user'>
                               <strong>Touseeq Ijaz</strong> 

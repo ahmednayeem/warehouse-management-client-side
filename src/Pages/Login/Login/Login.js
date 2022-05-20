@@ -73,7 +73,6 @@ if(loading || sending){
      }
   
  
- 
  return (
 <div>
   <div>

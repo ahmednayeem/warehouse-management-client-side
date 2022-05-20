@@ -11,6 +11,9 @@ import Register from './Pages/Login/Register/Register';
 import Checkout from './Pages/Checkout/Checkout/Checkout';
 import RequireAuth from './Pages/Login/RequireAuth/RequireAuth';
 import Inventory from './Pages/Inventory/Inventory';
+import AddProduct from './Pages/AddProduct/AddProduct';
+import ManageProduct from './Pages/ManageProducts/ManageProduct';
+import MyProduct from './Pages/MyProduct/MyProduct';
 
 
 function App() {
@@ -34,6 +37,20 @@ function App() {
             <Checkout></Checkout>
           </RequireAuth>
         }></Route>
+                <Route path='/addproduct' element={
+          <RequireAuth>
+            <AddProduct></AddProduct>
+          </RequireAuth>
+        }></Route>
+
+          <Route path='/manage' element={
+          <RequireAuth>
+            <ManageProduct></ManageProduct>
+          </RequireAuth>
+        }></Route>
+        <Route path="/myproduct" element={<MyProduct></MyProduct>}></Route>
+       
+        
         <Route path='*' element={<NotFound></NotFound>}></Route>
       </Routes>
       <Footer></Footer>

@@ -1,16 +1,34 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import './ProductDetail.css'
 
 
 const ProductDetail = () => {
-    const {productId} = useParams()
+    const {productId} = useParams();
+    const [product, setProduct] = useState({});
+
+    
+    useEffect( () => {
+        const url = `http://localhost:5000/product/${productId}`
+
+        fetch(url)
+        .then(res=> res.json())
+        .then(data => setProduct(data))
+    }, [])
+
+
     return (
-        <div>
-            <h2>Welcome to detail: {productId}</h2>
-            <Link to="/checkout">
+             <div className='productDetail mt-5'>
+            <img src={product.img} alt="" />
+           <div className='mt-2'>
+          <h2>name: {product.name}</h2>
+            <p>Price: {product.price}</p>
+            <p>Supplier: {product.supplier}</p>
+            <p><small>{product.description}</small></p>
+            </div>
+            <Link to="/">
             <button className='checkoutBtn mt-3' type="submit">
-             confirm booking
+            Delivered
            </button>
             </Link>
         </div>
