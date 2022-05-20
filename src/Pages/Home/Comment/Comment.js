@@ -32,7 +32,7 @@ const Comment = () => {
             
                     </div>
                     <div className='client-comment'>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia rem maiores odio? Repellendus eum hic reprehenderit. Repudiandae, nulla. Rem, minus quisquam! Exercitationem quidem eveniet beatae dolor excepturi nihil commodi consequuntur.</p>
+                        <p>2020 Intel-powered MacBook Air and MacBook Pro: These models have been completely eclipsed by the late 2020 models with the Apple M1 chip, from performance to battery life.</p>
                     </div>
                 </div>
 
@@ -58,7 +58,7 @@ const Comment = () => {
             
                     </div>
                     <div className='client-comment'>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia rem maiores odio? Repellendus eum hic reprehenderit. Repudiandae, nulla. Rem, minus quisquam! Exercitationem quidem eveniet beatae dolor excepturi nihil commodi consequuntur.</p>
+                        <p>2020 Intel-powered MacBook Air and MacBook Pro: These models have been completely eclipsed by the late 2020 models with the Apple M1 chip, from performance to battery lifer.</p>
                     </div>
                 </div>
 
@@ -84,7 +84,7 @@ const Comment = () => {
             
                     </div>
                     <div className='client-comment'>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia rem maiores odio? Repellendus eum hic reprehenderit. Repudiandae, nulla. Rem, minus quisquam! Exercitationem quidem eveniet beatae dolor excepturi nihil commodi consequuntur.</p>
+                        <p>2020 Intel-powered MacBook Air and MacBook Pro: These models have been completely eclipsed by the late 2020 models with the Apple M1 chip, from performance to battery life.</p>
                     </div>
                 </div>
 
@@ -110,7 +110,7 @@ const Comment = () => {
             
                     </div>
                     <div className='client-comment'>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia rem maiores odio? Repellendus eum hic reprehenderit. Repudiandae, nulla. Rem, minus quisquam! Exercitationem quidem eveniet beatae dolor excepturi nihil commodi consequuntur.</p>
+                        <p>2020 Intel-powered MacBook Air and MacBook Pro: These models have been completely eclipsed by the late 2020 models with the Apple M1 chip, from performance to battery life.</p>
                     </div>
                 </div>
 
@@ -137,7 +137,7 @@ const Comment = () => {
             
                     </div>
                     <div className='client-comment'>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia rem maiores odio? Repellendus eum hic reprehenderit. Repudiandae, nulla. Rem, minus quisquam! Exercitationem quidem eveniet beatae dolor excepturi nihil commodi consequuntur.</p>
+                        <p>2020 Intel-powered MacBook Air and MacBook Pro: These models have been completely eclipsed by the late 2020 models with the Apple M1 chip, from performance to battery life.</p>
                     </div>
                 </div>
 
@@ -164,7 +164,7 @@ const Comment = () => {
             
                     </div>
                     <div className='client-comment'>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia rem maiores odio? Repellendus eum hic reprehenderit. Repudiandae, nulla. Rem, minus quisquam! Exercitationem quidem eveniet beatae dolor excepturi nihil commodi consequuntur.</p>
+                        <p>2020 Intel-powered MacBook Air and MacBook Pro: These models have been completely eclipsed by the late 2020 models with the Apple M1 chip, from performance to battery life.</p>
                     </div>
                 </div>
 

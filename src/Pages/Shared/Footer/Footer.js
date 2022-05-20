@@ -6,44 +6,40 @@ const Footer = () => {
     const year = today.getFullYear()
     return (
     
-           <footer class="mainFooter text-center text-lg-start">
+     
+    
 
-  <div class="container p-4">
+         
+ <div>
+
+
+<footer class=" text-center  mainFooter">
  
-    <div class=" row">
-    
-      <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
-        <h5 class="text-uppercase">Footer text</h5>
-
-        <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste atque ea quis
-          molestias. Fugiat pariatur maxime quis culpa corporis vitae repudiandae
-          aliquam voluptatem veniam, est atque cumque eum delectus sint!
-        </p>
-      </div>
+  <div class="px-5 py-16">
+ 
+    <div class="row px px-5 py-16 ">
   
-      <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
-        <h5 class="text-uppercase">Footer text</h5>
+      <div class="footerP col-lg-6 col-md-12 mb-4 mb-md-0 mx-auto">
+        <h5 class="text-uppercase text-4xl mb-3">Laptop Shop</h5>
 
-        <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste atque ea quis
-          molestias. Fugiat pariatur maxime quis culpa corporis vitae repudiandae
-          aliquam voluptatem veniam, est atque cumque eum delectus sint!
+        <p className='text-xl'>
+        The MacBook is Apple's third laptop computer family, introduced in 2006. Prior laptops were the PowerBook and iBook. In 2015, new MacBooks featured Apple's Retina Display and higher resolutions.
         </p>
       </div>
-    
-    </div>
    
+    </div>
+  
   </div>
 
 
-
-  <div class="text-center p-3 footerStyle">
+  <div class="text-center px-5 py-4 footerStyle">
   <p>Copyright {year} <i className="fa-solid fa-copyright"></i> Laptop Store. All Right Reserved</p>
   </div>
-
-
-        </footer>
+ 
+</footer>
+ </div>
+    
+      
     );
 };
 
