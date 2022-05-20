@@ -14,6 +14,9 @@ const Products = () => {
         .then(data => setProducts(data))
     }, [])
 
+
+    
+
     return (
         <div>
             <h1 className='product-title mt-5'>Our Products</h1>
