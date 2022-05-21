@@ -9,7 +9,7 @@ const ProductDetail = () => {
 
     
     useEffect( () => {
-        const url = `http://localhost:5000/product/${productId}`
+        const url = `https://sleepy-inlet-97088.herokuapp.com/product/${productId}`
 
         fetch(url)
         .then(res=> res.json())
